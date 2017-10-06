@@ -49,9 +49,9 @@ def getVideosInOnePage(html, worksheet, page):
         oneVideo.append(uploadTimestamp)
         oneVideo.append(authorId)
         oneVideo.append(authorUrl)
-        oneVideo.append(long(viewCount))
-        oneVideo.append(long(likeCount))
-        oneVideo.append(long(commentCount))
+        oneVideo.append(viewCount)
+        oneVideo.append(likeCount)
+        oneVideo.append(commentCount)
 
         rownumber = (page-1) * 20 + i + 1
         saveListToExcel(worksheet, oneVideo, rownumber)
