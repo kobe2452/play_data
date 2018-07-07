@@ -55,6 +55,7 @@ Input:
 def run(responses, tol=0.00001, max_iter=100, init='average'):
     # convert responses to counts
     (patients, observers, classes, counts) = responses_to_counts(responses)
+    print(counts)
     print("num Patients: %d" % len(patients))
     print("Observers: %s" % observers)
     print("Classes: %s" % classes)
@@ -144,6 +145,7 @@ def responses_to_counts(responses):
     
     classes = list(classes)
     classes.sort()
+    print(classes)
     nClasses = len(classes)
         
     observers = list(observers)
